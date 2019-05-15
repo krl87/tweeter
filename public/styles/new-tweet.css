@@ -4,6 +4,7 @@ main.container > section.new-tweet {
   display: flex;
   flex-direction: column;
   border-radius: 5px;
+  margin-top: 140px;
  }
 
 main.container > section.new-tweet > h2 {
