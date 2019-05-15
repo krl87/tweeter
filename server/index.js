@@ -2,10 +2,11 @@
 
 // Basic express setup:
 
-const PORT          = 8080;
-const express       = require("express");
-const bodyParser    = require("body-parser");
-const app           = express();
+const PORT = 8080;
+const express = require("express");
+const bodyParser = require("body-parser");
+const app = express();
+const md5 = require('md5');
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));

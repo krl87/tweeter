@@ -5,9 +5,11 @@
  */
 html {
   box-sizing: border-box;
+  height: 100%;
 }
 *, *:before, *:after {
   box-sizing: inherit;
+
 }
 
 /*
@@ -18,8 +20,26 @@ body {
   margin: 0;
   color: #244751;
   background-color: #eee;
+  font-family: 'Roboto Condensed', sans-serif;
+
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+ main.container {
+  width: 450px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 2em;
+  margin-top: 140px;
+ }
+
+ footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 2em;
+ }
+

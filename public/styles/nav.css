@@ -1,0 +1,17 @@
+nav#nav-bar {
+  background-color: #00a087;
+  color: #e8fdff;
+  font-size: 2em;
+  padding-left: 2em;
+  padding-right: 2em;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+nav#nav-bar img.logo {
+  margin-right: 10px;
+}
+

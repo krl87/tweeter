@@ -1,0 +1,23 @@
+main.container > section.new-tweet {
+  background-color: #eee;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+ }
+
+main.container > section.new-tweet > h2 {
+  border-bottom: 1px solid black;
+}
+
+main.container > section.new-tweet > form > textarea {
+  padding: 1em;
+  width: 100%;
+  resize: none;
+}
+
+main.container > section.new-tweet > form > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
