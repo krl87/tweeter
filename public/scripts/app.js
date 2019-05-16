@@ -23,7 +23,7 @@ function createTweetElement(tweet) {
  let $header = $("<header>");
  $header.append($("<img>").attr("src", tweet.user.avatars.small));
  $header.append($("<h1>").text(tweet.user.name));
- $header.append($("<h3>").text(tweet.user.handle));
+ $header.append($("<h2>").text(tweet.user.handle));
  let $content = $("<div>").text(tweet.content.text);
  let $footer = $("<footer>");
  $footer.append("<div>").text(tweet.created_at);
