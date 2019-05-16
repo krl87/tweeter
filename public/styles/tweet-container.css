@@ -51,6 +51,7 @@
   visibility: hidden;
   margin-right: 10px;
   font-size: 1.2em;
+  color: 000;
 }
 
 #tweet-container article {
@@ -63,4 +64,5 @@
 
 #tweet-container article:hover .font-awesome {
   visibility: visible;
+  color: #61c8b8;
 }

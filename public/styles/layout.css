@@ -32,5 +32,6 @@ body {
   margin: 0 auto;
   background-color: white;
   padding: 2em;
- }
+  z-index: 0;
+}
 

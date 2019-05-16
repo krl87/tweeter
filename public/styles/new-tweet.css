@@ -5,7 +5,8 @@ main.container > section.new-tweet {
   flex-direction: column;
   border-radius: 5px;
   margin-top: 140px;
- }
+  border: 1px solid #DADADA;
+}
 
 main.container > section.new-tweet > h2 {
   border-bottom: 1px solid black;
