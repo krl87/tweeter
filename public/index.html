@@ -54,6 +54,14 @@
     <main class="container">
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
+        <div class="isa_error error1">
+          <i class="fa fa-times-circle"></i>
+          Please enter a tweet.
+        </div>
+        <div class="isa_error error2">
+          <i class="fa fa-times-circle"></i>
+          Max character length is exceeded.
+        </div>
         <form method="post" action="/tweets/" >
           <textarea name="text" placeholder="What are you humming about?"></textarea>
           <div>

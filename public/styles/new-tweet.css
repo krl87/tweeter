@@ -18,6 +18,23 @@ main.container > section.new-tweet > form > textarea {
   resize: none;
 }
 
+main.container > section.new-tweet > div.error1 {
+  display: none;
+  margin: 10px 0px;
+  padding:12px;
+}
+
+main.container > section.new-tweet > div.error2 {
+  display: none;
+  margin: 10px 0px;
+  padding:12px;
+}
+
+.isa_error {
+    color: #D8000C;
+    background-color: #FFD2D2;
+}
+
 main.container > section.new-tweet > form > div {
   display: flex;
   justify-content: space-between;

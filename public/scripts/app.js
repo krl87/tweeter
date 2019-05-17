@@ -41,9 +41,10 @@ function ajaxRequest() {
     e.preventDefault();
 
   if ($("textarea").val() === "") {
-    alert("Please enter a tweet");
+    // alert("Please enter a tweet");
+    $(".error1").slideDown();
   } else if ($("textarea").val().length > 140 ) {
-    alert("Your tweet is too long");
+    $(".error2").slideDown();
   } else  {
       $.ajax({
         type: "POST",
