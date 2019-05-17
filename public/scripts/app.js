@@ -67,8 +67,17 @@ function loadTweets() {
   });
 }
 
+
+
 //fire functions
 $(document).ready(function() {
   loadTweets();
   ajaxRequest();
+
+  //toggle compose new-tweet with click/toggle and focus once complete
+  $( ".compose" ).click(function() {
+    $( ".new-tweet" ).slideToggle("slow", function (){
+      $("textarea").focus();
+    });
+  });
 });
