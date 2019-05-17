@@ -2,9 +2,9 @@ nav#nav-bar {
   background-color: #00a087;
   color: #e8fdff;
   font-size: 2em;
-  padding-left: 2em;
-  padding-right: 2em;
+  padding: .3em 2em;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   position: fixed;
   top: 0;
@@ -12,7 +12,25 @@ nav#nav-bar {
   z-index: 1;
 }
 
-nav#nav-bar img.logo {
+nav#nav-bar div:first-of-type {
+  display: flex;
+  align-items: center;
+}
+
+nav#nav-bar div > img.logo {
   margin-right: 10px;
 }
 
+nav#nav-bar div > button.compose {
+  padding: .7em;
+  border-radius: 5px;
+  font-size: .83em;
+  border: 1px solid #000;
+  background-color: #e6fdff;
+  color: #279b88;
+}
+
+nav#nav-bar div > button.compose:hover {
+  background-color: #fff;
+  color: #000;
+}
