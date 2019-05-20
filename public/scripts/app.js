@@ -36,9 +36,15 @@ function convertTime(time1, time2) {
 // create html via jquery
 function createTweetElement(tweet) {
   const tweetTime = convertTime(Date.now(), tweet.created_at);
-  let $header = $("<header>").append($("<img>").attr("src", tweet.user.avatars.small));
-  $header.append($("<h1>").text(tweet.user.name));
-  $header.append($("<h2>").text(tweet.user.handle));
+  let $header = $("<header>");
+  let $headerDiv = $("<div>");
+  let $avatar = $("<img>").attr("src", tweet.user.avatars.small);
+  let $fullName = $("<h1>").text(tweet.user.name);
+  let $userHandle = $("<h2>").text(tweet.user.handle);
+
+  $headerDiv.append($avatar).append($fullName);
+  $header.append($headerDiv).append($userHandle);
+
   let $content = $("<div>").text(tweet.content.text);
   let $footer = $("<footer>");
   $footer.append("<div>").text(tweetTime);

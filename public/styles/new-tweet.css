@@ -31,12 +31,26 @@ main.container > section.new-tweet > div.error2 {
 }
 
 .isa_error {
-    color: #D8000C;
-    background-color: #FFD2D2;
+  color: #D8000C;
+  background-color: #FFD2D2;
 }
 
 main.container > section.new-tweet > form > div {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+main.container > section.new-tweet > form > div > input {
+  padding: .5em;
+  font-weight: 500;
+  border-radius: 5px;
+  border: 1px solid #000;
+  background-color: #e6fdff;
+  color: #279b88;
+}
+
+main.container > section.new-tweet > form > div > input:hover {
+  background-color: #fff;
+  color: #000;
 }

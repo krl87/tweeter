@@ -6,20 +6,26 @@
 
 #tweet-container header {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   align-items: center;
   background-color: #eee;
-  padding-top: 10px;
+  padding-top: 1em;
+  padding-bottom: .3em;
+  justify-content: space-between;
 }
 
-#tweet-container header img {
+#tweet-container header > div {
+  display: flex;
+  height: 100%;
+  padding: 0;
+}
+
+#tweet-container header div > img {
   height: 55px;
   width: auto;
   margin-left: 1.2em;
 }
 
-#tweet-container header h1 {
+#tweet-container header div > h1 {
   font-size: 1.7em;
   padding-left: .5em;
 }
@@ -27,9 +33,7 @@
 #tweet-container header h2 {
   font-size: 1em;
   font-weight: lighter;
-  margin-top: 1.7em;
-  margin-left: 4em;
-  margin-right: 1.2em;
+  margin-right: 1em;
 }
 
 #tweet-container > article > div {
